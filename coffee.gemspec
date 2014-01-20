@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Coffee::VERSION
   spec.authors       = ["Arkadiusz Buras"]
   spec.email         = ["macbury@gmail.com"]
-  spec.summary       = %q{Simple remote coffee maker controller}
-  spec.description   = %q{Simple remote coffee maker controller}
-  spec.homepage      = ""
+  spec.summary       = %q{Remote coffee controller for arduino powered coffee maker }
+  spec.description   = %q{Remote coffee controller for arduino powered coffee maker}
+  spec.homepage      = "https://github.com/macbury/Coffee"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
