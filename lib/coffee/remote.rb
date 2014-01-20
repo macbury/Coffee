@@ -20,8 +20,18 @@ module Coffee
 
     def self.print_status
       stats = self.status
+      
+      total_seconds = stats["uptime"]
+      seconds       = total_seconds % 60
+      minutes       = (total_seconds / 60) % 60
+      hours         = total_seconds / (60 * 60)
+
+      uptime = "%02d:%02d:%02d" % [hours, minutes, seconds]
+
       puts "Running: #{stats["running"].inspect}"
-      puts "Seconds: #{stats["uptime"].inspect}"
+      puts "Uptime: #{uptime}"
+
+
     end
 
   end
